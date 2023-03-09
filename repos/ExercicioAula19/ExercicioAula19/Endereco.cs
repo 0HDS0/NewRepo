@@ -38,7 +38,7 @@
 
         public string GetCidade() { return Cidade; }
 
-        public string GetMunicipio() { return Estado; }
+        public string GetEstado() { return Estado; }
 
         public void SetComplemento(string complemento)
         { Complemento = complemento; }
