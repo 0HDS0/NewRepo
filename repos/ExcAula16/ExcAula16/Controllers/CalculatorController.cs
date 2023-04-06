@@ -14,7 +14,7 @@ namespace ExcAula16.Controllers
         { 
             handler = new CalculatorHandler();
         }
-        [HttpGet]
+        [HttpPost]
         [Route("Execute")]
         public async Task<IActionResult> Calculation([FromBody] Parameters parameter)
         {

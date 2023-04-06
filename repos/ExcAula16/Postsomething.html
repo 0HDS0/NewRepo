@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Post calculator</title>
+        <meta charset="UTF_8">
+    </head>
+    <body>
+        <Label>Valor 1</Label><br>
+        <input id="Valor_1" type="number"><br><br>
+
+        <Label>Valor 2</Label><br>
+        <input id="Valor_2" type="number"><br><br>
+        
+        <Label>Operações</Label><br>
+        <select id="Operacoes">
+            <option value="1">Soma</option>
+            <option value="2">Subtração</option>
+            <option value="3">Multiplicação</option>
+            <option value="4">Divisão</option>
+        </select><br><br>
+
+        <button onclick="Calculation()">Calcular</button><br><br>
+
+        <label>Resultado</label><br>
+        <input id="resultado" type="text" disabled>
+
+        <script src="script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </body>
+
+    
+</html>

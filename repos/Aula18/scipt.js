@@ -1,6 +1,0 @@
-function salvar(){
-
-}
-function consultar(){
-    
-}

@@ -1,4 +1,6 @@
-namespace ExcAula16
+using Microsoft.Extensions.Options;
+
+namespace Aula18
 {
     public class Program
     {
@@ -14,9 +16,9 @@ namespace ExcAula16
             builder.Services.AddSwaggerGen();
 
             builder.Services.AddCors(options => 
-                { options.AddPolicy(name: "myCors", builder =>
-                { builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod(); });
-            });
+            { options.AddPolicy(name: "myCors", builder => 
+            { builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod(); 
+            }); });
 
             var app = builder.Build();
 
