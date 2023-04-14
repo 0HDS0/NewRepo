@@ -1,7 +1,7 @@
 function salvar(){
 
     let pessoa = {
-        id: ParseInt(document.getElementById("id").value),
+        id: parseInt(document.getElementById("id").value),
         nome: document.getElementById("nome").value
     };    
 

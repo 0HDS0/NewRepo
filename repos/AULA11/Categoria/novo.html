@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cadastro de Categorias</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Produtos e Categorias</h1>
+        <A href="../Categoria/novo.html">Cadastro de Categorias</A>
+        <b>|</b>
+        <a href="../Categoria/get_by_id.html">Consulta de Categorias</a>
+        <b>|</b>
+        <a href="../Produto/novo.html">Cadastro de Produtos</a>
+        <b>|</b>
+        <a href="../Produto/get_by_id.html">Consulta de Produtos</a>
+        <b>|</b>
+        <a href="../Produto/lista_nao_vencidos.html">Listagem de  Produtos Não Vencidos</a>
+        <hr>
+        <h2>Cadastro de Categorias</h2>
+        <hr>
+        <label>ID</label><br>
+        <input id="id" type="number"><br><br>
+
+        <label>Descrição</label><br>
+        <input id="description" type="text"><br><br>
+
+        <button onclick="register()">Cadastrar</button>
+        <h3 id="response"></h3>
+        
+        <script src="script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </body>
+    <script src="script.js"></script>
+</html>

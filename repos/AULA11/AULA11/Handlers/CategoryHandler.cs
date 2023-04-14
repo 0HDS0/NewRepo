@@ -29,5 +29,9 @@ namespace AULA11.Handlers
             return Created($"api/category/{category.ID}", category);
         }
 
+        public IActionResult GetAll()
+        {
+            return Ok(categories);
+        }
     }
 }

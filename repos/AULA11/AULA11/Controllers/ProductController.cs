@@ -29,10 +29,10 @@ namespace AULA11.Controllers
             return handler.Post(product);
         }
         [HttpGet]
-        [Route("nao_vencidos")]
+        [Route("unexpired")]
         public async Task<IActionResult> GetNaoVencidos()
         {
-            return handler.GetNaoVencidos();
+            return handler.GetUnexpired();
         }
 
     }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cadastro de Produtos</title>
+        <meta charset="UTF-8">
+    </head>
+    <body onload="loadCategory()">
+        <br><h1>Produtos e Categorias</h1><br>
+        
+        <A href="../Categoria/novo.html">Cadastro de Categorias</A>  <b>|</b>
+        <a href="../Categoria/get_by_id.html">Consulta de Categorias</a>  <b>|</b>  
+        <a href="../Produto/novo.html">Cadastro de Produtos</a>  <b>|</b>
+        <a href="../Produto/get_by_id.html">Consulta de Produtos</a>  <b>|</b>
+        <a href="../Produto/lista_nao_vencidos.html">Listagem de  Produtos Não Vencidos</a>
+        
+        <hr><h2>Cadastro de Produtos</h2><hr>
+        
+        <label>ID</label><br>
+        <input id="idCadProd" type="number">
+        <br><br>
+
+        <label>Nome</label><br>
+        <input type="text" id="name"><br><br>
+
+        <label>Categoria</label><br>
+        <select id="category"></select>
+        <h3 id="error"></h3>
+
+        <label>Validade</label><br>
+        <input id="validity" type="date"><br><br>
+
+
+        <button onclick="register()">Cadastrar</button>
+        <h3 id="result"></h3>
+        
+        <script src="script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </body>
+</html>

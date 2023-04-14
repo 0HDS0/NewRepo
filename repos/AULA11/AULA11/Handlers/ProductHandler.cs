@@ -41,15 +41,11 @@ namespace AULA11.Handlers
             return Created($"api/product/{product.ID}", "Produto cadastrado com sucesso!");
             
         }
-        public IActionResult GetNaoVencidos()
+        public IActionResult GetUnexpired()
         {
             List <Product> Verification = new List<Product>();
             //Tambem podemos usar .Today no lugar do .Now onde Today cosidera somente a data e o Now as horas
             Verification = products.Where(X => X.Validity >= DateTime.Today).ToList();
-            if (Verification.Count == 0)
-            {
-                return NoContent();
-            }
             return Ok(Verification);
         }
     }

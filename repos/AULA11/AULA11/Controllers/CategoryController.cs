@@ -28,5 +28,11 @@ namespace AULA11.Controllers
         {
             return handler.Post(category);
         }
+        [HttpGet]
+        [Route("all")]
+        public async Task<IActionResult> GetAll()
+        {
+            return handler.GetAll();
+        }
     }
 }
