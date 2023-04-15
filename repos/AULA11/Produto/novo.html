@@ -13,25 +13,27 @@
         <a href="../Produto/get_by_id.html">Consulta de Produtos</a>  <b>|</b>
         <a href="../Produto/lista_nao_vencidos.html">Listagem de  Produtos Não Vencidos</a>
         
-        <hr><h2>Cadastro de Produtos</h2><hr>
-        
-        <label>ID</label><br>
-        <input id="idCadProd" type="number">
-        <br><br>
+        <fieldset>
+            <legend><h2>Cadastro de Produtos</h2></legend>
+            
+            <label>ID</label><br>
+            <input id="idCadProd" type="number">
+            <br><br>
 
-        <label>Nome</label><br>
-        <input type="text" id="name"><br><br>
+            <label>Nome</label><br>
+            <input type="text" id="name"><br><br>
 
-        <label>Categoria</label><br>
-        <select id="category"></select>
-        <h3 id="error"></h3>
+            <label>Categoria</label><br>
+            <select id="category"></select>
+            <h3 id="error"></h3>
 
-        <label>Validade</label><br>
-        <input id="validity" type="date"><br><br>
+            <label>Validade</label><br>
+            <input id="validity" type="date"><br><br>
 
 
-        <button onclick="register()">Cadastrar</button>
-        <h3 id="result"></h3>
+            <button onclick="register()">Cadastrar</button>
+            <h3 id="result"></h3>
+        </fieldset>
         
         <script src="script.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

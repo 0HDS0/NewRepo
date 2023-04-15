@@ -94,12 +94,28 @@ function listUnexpiredProduct(){
 
             $.each(result,function(index, product){
             listDiv.innerHTML += 
+                // `
+                // ID: ${product.id_produto}<BR>
+                // Nome: ${product.nome_produto}<br>
+                // Validade: ${new Date(product.val_produto).toDateString()}<br>
+                // Categoria: ${product.category_produto.desc_cat}<br><br>
+                // `
                 `
-                ID: ${product.id_produto}<BR>
-                Nome: ${product.nome_produto}<br>
-                Validade: ${new Date(product.val_produto).toDateString()}<br>
-                Categoria: ${product.category_produto.desc_cat}<br><br>
-                `
+                <br>
+                <label>ID</label>
+                <input type="number" value="${product.id_produto}" readonly><br>
+                <br>
+                <label>Nome</label>
+                <input type="text" value="${product.nome_produto}" readonly><br>
+                <br>
+                <label>Validade</label>
+                <input type="date" value="${product.val_produto.replace("T00:00:00", "")}" readonly><br>
+                <br>
+                <label>Categoria</label>
+                <input type="text" value="${product.category_produto.desc_cat}" readonly><br><br>
+                <hr>
+
+                `;
             })
             
         },

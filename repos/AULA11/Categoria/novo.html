@@ -15,18 +15,18 @@
         <a href="../Produto/get_by_id.html">Consulta de Produtos</a>
         <b>|</b>
         <a href="../Produto/lista_nao_vencidos.html">Listagem de  Produtos Não Vencidos</a>
-        <hr>
-        <h2>Cadastro de Categorias</h2>
-        <hr>
-        <label>ID</label><br>
-        <input id="id" type="number"><br><br>
+        <fieldset>
+            <legend><h2>Cadastro de Categorias</h2></legend>
+            
+            <label>ID</label><br>
+            <input id="id" type="number"><br><br>
 
-        <label>Descrição</label><br>
-        <input id="description" type="text"><br><br>
+            <label>Descrição</label><br>
+            <input id="description" type="text"><br><br>
 
-        <button onclick="register()">Cadastrar</button>
-        <h3 id="response"></h3>
-        
+            <button onclick="register()">Cadastrar</button>
+            <h3 id="response"></h3>
+        </fieldset>
         <script src="script.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </body>

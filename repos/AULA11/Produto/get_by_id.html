@@ -13,27 +13,28 @@
         <a href="../Produto/get_by_id.html">Consulta de Produtos</a>  <b>|</b>
         <a href="../Produto/lista_nao_vencidos.html">Listagem de  Produtos Não Vencidos</a>
         
-        <hr><h2>Consulta de Produtos</h2><hr>
+        <fieldset>
+            <legend><h2>Consulta de Produtos</h2></legend>
 
-        <label>Informe um ID para consulta</label><br>
-        <input id="id_query" type="number"><br><br>
+            <label>Informe um ID para consulta</label><br>
+            <input id="id_query" type="number"><br><br>
 
 
-        <button onclick="getProduct()">Consultar</button>
-        <h3 id="error"></h3>
+            <button onclick="getProduct()">Consultar</button>
+            <h3 id="error"></h3>
 
-        <label>Id</label><br>
-        <input id="id" type="number"><br><br>
+            <label>Id</label><br>
+            <input id="id" type="number"><br><br>
 
-        <label>Nome</label><br>
-        <input type="text" id="name"><br><br>
+            <label>Nome</label><br>
+            <input type="text" id="name"><br><br>
 
-        <label>Validade</label><br>
-        <input type="date" id="validity"><br><br>
+            <label>Validade</label><br>
+            <input type="date" id="validity"><br><br>
 
-        <label>Categoria</label><br>
-        <input type="text" id="category"><br><br>
-        
+            <label>Categoria</label><br>
+            <input type="text" id="category"><br><br>
+    </fieldset>
         <script src="script.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </body>
