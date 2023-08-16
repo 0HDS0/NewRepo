@@ -14,5 +14,11 @@ namespace ExcAula16.Domain
         [JsonConverter(typeof(JsonStringEnumConverter))]
         [JsonPropertyName("Operacoes")]
         public OperationType Operation { get; set; }
+        public Parameters(double value1, double value2, int opType)
+        {
+            Value1= value1;
+            Value2= value2;
+            Operation = (OperationType)opType;
+        }
     }
 }

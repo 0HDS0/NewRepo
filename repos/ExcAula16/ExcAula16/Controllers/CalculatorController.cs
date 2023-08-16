@@ -1,6 +1,5 @@
 ﻿using ExcAula16.Domain;
 using ExcAula16.Handlers;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ExcAula16.Controllers

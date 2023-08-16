@@ -1,4 +1,5 @@
-﻿using ExcAula16.Domain;
+﻿using ExcAula16.CommandResult;
+using ExcAula16.Domain;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Reflection.Metadata;
@@ -32,6 +33,9 @@ namespace ExcAula16.Handlers
                 }
                 else if(parameter.Operation == Enums.OperationType.Division)
                 {
+                    if (parameter.Value2 == 0) {
+                        throw new DivideByZeroException(); }
+
                     calculo = parameter.Value1 / parameter.Value2;
                     return new OkObjectResult(calculo);
                 }
@@ -46,7 +50,7 @@ namespace ExcAula16.Handlers
             }
             catch(DivideByZeroException)
             {
-                return new ObjectResult("Ocorreu um erro inesperado") { StatusCode = 500 };
+                return new DivideByZeroResult("Divisão Por Zero");
             }
             catch (ArithmeticException)
             {

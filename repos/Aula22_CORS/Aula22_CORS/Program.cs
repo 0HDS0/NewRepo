@@ -31,6 +31,10 @@ namespace Aula26_CORS
             //WithHeaders - Recebe um vetor de string como parametro, e define que a politica permita o acesso de qualquer header definido no vetor de string 
             //WithMethods - Recebe um vetor de string como parametro, e define que a politica permita o acesso de qualquer método definido no vetor de string
             //WithOrigins - Recebe um vetor de string como parametro, e define que a politica permita o acesso de qualquer origem definido no vetor de string
+
+            //Temos dois atributos de configuração 
+            //EnableCors - Recebe uma string como parametro
+            //DisableCors - Define que a routa naão respeita nenhuma política de CORS, nem a política padrão.
             builder.Services.AddCors(options => 
             {
                 options.AddPolicy("Cors-1", 
@@ -47,7 +51,8 @@ namespace Aula26_CORS
                         string[] headers = new string[]
                         {
                             "Token",
-                            "ContentType"
+                            "ContentType",
+                            "Access-Control-Allow-Origin"
                         };
                         string[] methods = new string[]
                         {
@@ -55,7 +60,7 @@ namespace Aula26_CORS
                         };
                         string[] origins = new string[]
                         {
-                            ""
+                            "http://127.0.0.1:5500"
                         };
                         builder.WithHeaders(headers)
                                .WithMethods(methods)
